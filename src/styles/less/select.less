@@ -1,0 +1,131 @@
+.vm-select-input__inner{
+  width: 240px;
+}
+.vm-select {
+  display: inline-block;
+  position: relative;
+
+  &:hover {
+    .vm-input__inner {
+      border-color: @select-border-color-hover;
+    }
+  }
+
+  & .vm-input__inner {
+    cursor: pointer;
+    padding-right: 35px;
+
+    &:focus {
+      border-color: @select-input-focus-background;
+    }
+  }
+
+  & .vm-input {
+    & .vm-input__icon {
+      color: @select-input-color;
+      font-size: @select-input-font-size;
+      transition: transform .3s;
+      transform: translateY(-50%) rotateZ(0deg);
+      line-height: 16px;
+      top: 50%;
+      cursor: pointer;
+
+      &.reverse {
+        transform: translateY(-50%) rotateZ(180deg);
+      }
+      &.show-close {
+        transition: 0s;
+        size: 16px;
+        font-size: @select-font-size;
+        text-align: center;
+        transform: translateY(-50%) rotateZ(0deg);
+        border-radius: @border-radius-circle;
+        color: @select-input-color;
+
+        &:hover {
+          color: @select-close-hover-color;
+        }
+      }
+    }
+
+    &.is-disabled {
+      & .vm-input__inner {
+        cursor: not-allowed;
+
+        &:hover {
+          border-color: @select-disabled-border;
+        }
+      }
+    }
+  }
+
+  & > .vm-input {
+    display: block;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-left: 10px;
+    color: @select-multiple-input-color;
+    font-size: @select-font-size;
+    vertical-align: baseline;
+    appearance: none;
+    height: 28px;
+    background-color: transparent;
+    &.mini {
+      height: 14px;
+    }
+  }
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    z-index: @index-top;
+    right: 25px;
+    color: @select-input-color;
+    line-height: 18px;
+    font-size: @select-input-font-size;
+
+    &:hover {
+      color: @select-close-hover-color;
+    }
+  }
+
+  &__tags {
+    position: absolute;
+    line-height: normal;
+    white-space: normal;
+    z-index: @index-normal;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  & .vm-tag__close {
+    margin-top: -2px;
+  }
+
+  & .vm-tag {
+    height: @select-tag-height;
+    line-height: @select-tag-height;
+    box-sizing: border-box;
+    margin: 3px 0 3px 6px;
+  }
+
+  &__tag {
+    display: inline-block;
+    height: @select-tag-height;
+    line-height: @select-tag-height;
+    font-size: @select-font-size;
+    border-radius: @border-radius-base;
+    color: @select-tag-color;
+    background-color: @select-tag-background;
+
+    & .vm-icon-close {
+      font-size: @select-input-font-size;
+    }
+  }
+}
+
