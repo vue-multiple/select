@@ -170,7 +170,10 @@
             value: {
                 required: true
             },
-            inputclass: String,
+            inputclass: {
+                type: String,
+                default: ''
+            },
             inputheight: String,
             disabled: Boolean,
             clearable: Boolean,

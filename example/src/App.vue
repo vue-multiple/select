@@ -14,7 +14,8 @@
             </template>
             <template slot="source">
                 <div class="source">
-                    <vm-select v-model="value1" placeholder="请选择">
+                    <vm-select v-model="value1"
+                               placeholder="请选择">
                         <vm-option
                             v-for="item in options"
                             :key="item.value"
@@ -293,14 +294,14 @@
                 </tr>
                 <tr>
                     <td>inputheight</i></td>
-                    <td>Select input框的高度</td>
+                    <td>当为多选时，可通过inputheight 修改 Select input框的高度</td>
                     <td>number</td>
                     <td>—</td>
                     <td>36</td>
                 </tr>
                 <tr>
                     <td>inputclass</i></td>
-                    <td>Select input框的类名，无法改变高度，高度只能通过inputheight属性设置</td>
+                    <td>Select input框的类名，当为多选时，无法改变高度，高度只能通过inputheight属性设置</td>
                     <td>string</td>
                     <td>—</td>
                     <td>—</td>
@@ -700,13 +701,7 @@
 </script>
 
 <style lang="less" type="text/less" rel="stylesheet/less">
-    .aaa{
-        /*width: 100px;*/
 
-        height: 300px;
-        /*width: 500px;*/
-        /*border: 5px solid #000;*/
-    }
     #app {
         margin: 60px auto;
     }
