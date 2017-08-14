@@ -1,7 +1,7 @@
 {
   "name": "vue-multiple-select",
   "description": "Vue-based select component",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "vue-multiple",
   "main": "lib/select.js",
   "files": [
@@ -36,9 +36,9 @@
     "deepmerge": "^1.5.0",
     "throttle-debounce": "^1.0.1",
     "vue": "^2.3.3",
-    "vue-multiple-input": "^1.0.2",
+    "vue-multiple-input": "^1.0.3",
     "vue-multiple-scrollbar": "^1.0.1",
-    "vue-multiple-tag": "^1.0.1"
+    "vue-multiple-tag": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",

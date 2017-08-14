@@ -129,7 +129,7 @@
                     !this.multiple &&
                     this.value !== undefined &&
                     this.value !== '';
-                return criteria ? 'vm-icon-circle-close show-close' : (this.remote && this.filterable ? '' : 'vm-icon-caret-top');
+                return criteria ? 'vm-select-icon-circle-close show-close' : (this.remote && this.filterable ? '' : 'vm-select-icon-caret-top');
             },
 
             debounce() {
